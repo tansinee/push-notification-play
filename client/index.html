@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Push Notification Test</title>
+        <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase-messaging.js"></script>
+        <script src="scripts/manifest.js"></script>
+    </head>
+    <body>
+        <h1>Notifications</h1>
+        <div id="noti-items">
+        </div>
+
+        <div style="position:fixed;bottom:10px">Current Token: <small id="push-token"></small></div>
+
+        <script src="scripts/push-handler.js"></script>
+    </body>
+</html>
