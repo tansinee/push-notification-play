@@ -1,4 +1,4 @@
-firebase.initializeApp(config);
+importScripts('scripts/firebase_init.js');
 
 let messaging = firebase.messaging();
 
@@ -54,7 +54,7 @@ function prependMessage(messagePayload) {
     innerHtml.innerText = messagePayload.notification.topic;
 
     if (firstChild) {
-        firstChild.insertBefore(innerHtml)    
+        firstChild.insertBefore(innerHtml)
     } else {
         parentElement.appendChild(innerHtml);
     }
